@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- strings for login activity-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#B9BBBD</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSplashText">#000000</color>
+    <color name="colorProgressBar">#FFCE511C</color>
+    <color name="colorTextView">#83898E</color>
+</resources>

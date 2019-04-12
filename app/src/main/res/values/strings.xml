@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Visible2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- strings for login activity-->
+    <string name="booki">Visible</string>
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forget_password">Forget Password.?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_task_fragment">Hello task fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_me_fragment">Hello me fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_rank_fragment">Hello rank fragment</string>
+</resources>

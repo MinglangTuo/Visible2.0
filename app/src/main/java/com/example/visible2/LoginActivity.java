@@ -16,6 +16,16 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
@@ -32,6 +42,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getCheckFromServer("g", "G");
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_login);
@@ -70,13 +81,63 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (getCheckFromServer(userNameEdit.getText().toString(), passWordEdit.getText().toString())){
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(intent);
+                    //startActivity(intent);
                 }
             }
         });
     }
 
     public boolean getCheckFromServer (String username, String password) {
+        OkHttpClient client = new OkHttpClient();
+        String url = "http://10.7.209.104:8888/api/user";
+
+        RequestBody requestBody=new FormBody.Builder()
+                .add("oldPassword","111111")
+                .add("newPassword","111111")
+                .build();
+
+        Request request = new Request.Builder()
+                                    .url(url)
+                                    .post(requestBody)
+                                    .addHeader("content-type", "application/json")
+                                    .build();
+        Call call = client.newCall(request);
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                runOnUiThread(new Runnable()
+                {
+                    @Override
+                    public void run()
+                    {
+                        showWarnSweetDialog("服务器错误");
+                    }
+                });
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                final String res = response.body().string();
+                runOnUiThread(new Runnable()
+                {
+                    @Override
+                    public void run()
+                    {
+                        if (res.equals("0"))
+                        {
+                            showWarnSweetDialog("无此账号,请先注册");
+                        }
+                        else if(res.equals("1"))
+                        {
+                            showWarnSweetDialog("密码不正确");
+                        }
+                        else{
+                            showWarnSweetDialog(res);
+                        }
+                    }
+                });
+            }
+        });
         return true;
     }
 

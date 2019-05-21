@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- strings for login activity-->
+    <color name="blue">#0000FF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#BEBEBE</color>
+
+    <color name="task_color1">#FFC1C1</color>
+    <color name="task_color2">#8470FF</color>
+    <color name="task_color3">#FFD700</color>
+    <color name="task_color4">#00BFFF</color>
+    <color name="task_color5">#90EE90</color>
+    <color name="task_color6">#FF4500</color>
+
+    <color name="task_setting">#BBFFFF</color>
+
+    <array name="colors">
+        <item>@color/task_color1</item>
+        <item>@color/task_color2</item>
+        <item>@color/task_color3</item>
+        <item>@color/task_color4</item>
+        <item>@color/task_color5</item>
+        <item>@color/task_color6</item>
+    </array>
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#B9BBBD</color>

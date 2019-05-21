@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/task_color1"/>
+    <item android:color="@color/task_color2"/>
+    <item android:color="@color/task_color3"/>
+    <item android:color="@color/task_color4"/>
+    <item android:color="@color/task_color5"/>
+</selector>

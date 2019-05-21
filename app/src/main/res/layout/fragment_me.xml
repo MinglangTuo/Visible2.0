@@ -1,13 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#D9D9D9"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_me_fragment" />
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="364dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="530dp"
+                            android:background="@drawable/shape_corner_hard"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp" />
+
+                            <AbsoluteLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/nickname"
+                                    android:layout_width="90dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_x="120dp"
+                                    android:layout_y="0dp"
+                                    android:text="LAN"
+                                    android:background="@null"
+                                    android:textSize="40sp" />
+
+                                <com.example.visible2.myapp.CircleImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_x="230dp"
+                                    android:layout_y="0dp"
+                                    android:foregroundGravity="bottom"
+                                    android:src="@drawable/male" />
+
+                            </AbsoluteLayout>
+
+                            <AbsoluteLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp">
+
+
+
+                                <TextView
+                                    android:layout_width="210dp"
+                                    android:layout_height="35dp"
+                                    android:layout_x="105dp"
+                                    android:layout_y="11dp"
+                                    android:text="credits:   "
+                                    android:textSize="25sp" />
+
+                                <TextView
+                                    android:id="@+id/user_credits"
+                                    android:layout_width="210dp"
+                                    android:layout_height="35dp"
+                                    android:layout_x="192dp"
+                                    android:layout_y="6dp"
+                                    android:text="7777"
+                                    android:textSize="30sp" />
+
+
+
+                            </AbsoluteLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+
+                                    android:text="Personal Introduction"
+                                    android:textSize="30dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_x="0dp"
+                                    android:layout_y="20dp"
+                                    android:background="@drawable/shape_corner_gray_hard"
+                                    android:text="asadadasd\nasdadafasfaf\nasdafafaf" />
+
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Settings"
+                                android:textSize="30dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp" />
+
+
+                            <LinearLayout
+                                android:id="@+id/changepassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:background="@drawable/shape_corner_gray_hard"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent" />
+
+                                <com.example.visible2.myapp.CircleImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/password" />
+
+                                <TextView
+                                    android:layout_width="11dp"
+                                    android:layout_height="match_parent" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:text="Change Password"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp" />
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:background="@drawable/shape_corner_gray_hard"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent" />
+
+                                <com.example.visible2.myapp.CircleImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/ic_clear"
+                                    />
+
+                                <TextView
+                                    android:layout_width="11dp"
+                                    android:layout_height="match_parent" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:text="Clear Local Cache"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.shehuan.niv.NiceImageView
+                    android:id="@+id/Avatar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/testimage"
+                    app:border_color="#FFFFFF"
+                    app:border_width="7dp"
+                    app:corner_radius="20dp" />
+
+
+            </AbsoluteLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

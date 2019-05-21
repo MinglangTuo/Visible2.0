@@ -1,14 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_recycler_item_view"
     android:layout_width="match_parent"
-    android:layout_height="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:gravity="center_vertical">
+    android:layout_height="150dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:gravity="center">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="asdf"/>
-</FrameLayout>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/round_corner_rect"
+        android:backgroundTint="@color/grey"
+        />
+
+    <TextView
+        android:id="@+id/task_icon"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:background="@drawable/ic_flash_on_yellow_24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/task_name"
+        android:layout_width="179dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:text="task_name"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/task_setting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/task_start"
+        android:layout_alignRight="@+id/task_start"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/ic_settings_black_24dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="241dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="19dp"
+        android:text="date"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/task_start"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/ic_slow_motion_video_blue_24dp" />
+
+
+</RelativeLayout>

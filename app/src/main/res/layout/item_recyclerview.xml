@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@drawable/shape"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/tx"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_me_24dp"
+
+        android:background="@drawable/shape3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:text="zi"
+        android:textSize="25sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tx"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daka"
+        android:text="已完成打卡8次"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/tx"/>
+    <TextView
+        android:id="@+id/mingci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="40dp"
+
+        android:text="1"
+        android:paddingRight="6dp"
+        android:textSize="40sp"/>
+</RelativeLayout>
